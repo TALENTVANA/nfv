@@ -1,6 +1,5 @@
 mvn clean install
 mvn package docker:build
-sudo docker run --rm -v "$PWD":/app treeder/bump patch
 version=`cat VERSION`
 git add VERSION 
 git commit -m "version $version"
