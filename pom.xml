@@ -15,7 +15,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-        <docker.image.prefix>talentvana</docker.image.prefix>
+        <docker.image.prefix>demovana</docker.image.prefix>
 	</properties>
 
 	<!-- tag::security[] -->

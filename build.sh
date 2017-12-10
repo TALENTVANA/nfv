@@ -7,4 +7,6 @@ git commit -m "version $version"
 git tag -a "$version" -m "version $version"
 git push
 git push --tags
-docker tag talentvana/nfv:latest talentvana/nfv:$version
+docker tag demovana/nfv:latest demovana/nfv:$version
+docker push demovan/nfv:latest
+docker push demovana/nfv:$version
