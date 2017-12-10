@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.springframework</groupId>
-	<artifactId>gs-authenticating-ldap</artifactId>
+	<artifactId>nfv</artifactId>
 	<version>0.1.0</version>
 
 	<parent>
@@ -15,7 +15,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-        <docker.image.prefix>springio</docker.image.prefix>
+        <docker.image.prefix>talentvana</docker.image.prefix>
 	</properties>
 
 	<!-- tag::security[] -->
