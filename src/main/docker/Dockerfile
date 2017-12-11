@@ -1,5 +1,5 @@
 FROM java:8
 VOLUME /tmp
-ADD nfv-demo-0.1.0.jar app.jar
-RUN bash -c 'touch /app.jar'
-ENTRYPOINT ["java","-jar","/app.jar"]
+ADD nfv-demo-0.1.0.war app.war
+RUN bash -c 'touch /app.war'
+ENTRYPOINT ["java","-jar","/app.war"]

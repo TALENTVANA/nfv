@@ -1,4 +1,4 @@
-package hello;
+package nfv;
 
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.*;
 import static org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.*;
@@ -22,14 +22,12 @@ public class ApplicationTests {
 	@Test
 	public void loginWithValidUserThenAuthenticated() throws Exception {
 		FormLoginRequestBuilder login = formLogin().user("euclid").password("password");
-
 		mockMvc.perform(login).andExpect(authenticated().withUsername("euclid"));
 	}
 
 	@Test
 	public void loginWithInvalidUserThenUnauthenticated() throws Exception {
 		FormLoginRequestBuilder login = formLogin().user("invalid").password("invalidpassword");
-
 		mockMvc.perform(login).andExpect(unauthenticated());
 	}
 }
