@@ -10,12 +10,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().anyRequest().fullyAuthenticated().and().formLogin();
+		// http.authorizeRequests().anyRequest().fullyAuthenticated().and().formLogin();
 	}
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
-		authenticationManagerBuilder.inMemoryAuthentication().withUser("palash").password("palash").roles("USERS");
+		// authenticationManagerBuilder.inMemoryAuthentication().withUser("palash").password("palash").roles("USERS");
 	}
 
 }
