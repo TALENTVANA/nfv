@@ -8,16 +8,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-	private static final String FORUMSYS = "ldap://ldap.forumsys.com:389/dc=example,dc=com";
-
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().anyRequest().fullyAuthenticated().and().formLogin();
 	}
 
 	@Override
-	public void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.ldapAuthentication().userDnPatterns("uid={0}").contextSource().url(FORUMSYS);
+	protected void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
+		authenticationManagerBuilder.inMemoryAuthentication().withUser("palash").password("palash").roles("USERS");
 	}
 
 }

@@ -21,8 +21,8 @@ public class ApplicationTests {
 
 	@Test
 	public void loginWithValidUserThenAuthenticated() throws Exception {
-		FormLoginRequestBuilder login = formLogin().user("euclid").password("password");
-		mockMvc.perform(login).andExpect(authenticated().withUsername("euclid"));
+		FormLoginRequestBuilder login = formLogin().user("palash").password("palash");
+		mockMvc.perform(login).andExpect(authenticated().withUsername("palash"));
 	}
 
 	@Test
