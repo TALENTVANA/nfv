@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container">
-<h2>nfv-demo <span class="label label-success">1.0.33</span></h2>
+<h2>nfv-demo <span class="label label-success">1.0.34</span></h2>
 </div>
  <h3><span class="label label-success">IP Traffic</span><h3>
 <div id="netflow" style="background-color: #2a2c30">
